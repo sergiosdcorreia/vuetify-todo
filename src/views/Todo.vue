@@ -2,28 +2,19 @@
   <div class="home">
     <field-add-task />
     <list-tasks v-if="$store.state.tasks.length" />
-    <div
-      v-else
-      class="no-tasks"
-    >
-      <v-icon
-        size="100"
-        color="primary"
-      >
-        mdi-check
-      </v-icon>
-      <div class="text-h5 primary--text">No tasks</div>
-    </div>
+    <no-tasks v-else />
   </div>
 </template>
 
 <script>
+import NoTasks from '../components/Todo/NoTasks.vue'
 
 export default {
   name: 'Home',
   components: {
     'field-add-task': require('@/components/Todo/FieldAddTask.vue').default,
-    'list-tasks': require('@/components/Todo/ListTasks.vue').default
+    'list-tasks': require('@/components/Todo/ListTasks.vue').default,
+    'no-tasks': require('@/components/Todo/NoTasks.vue').default
   }
 }
 </script>
