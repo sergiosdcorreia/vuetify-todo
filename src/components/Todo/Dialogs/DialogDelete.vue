@@ -4,9 +4,7 @@
       <v-card-title class="headline">
         Delete task?
       </v-card-title>
-      <v-card-text
-        >Are you sure you wanna delete this task?</v-card-text
-      >
+      <v-card-text>Are you sure you wanna delete this task?</v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn text @click="$emmit('close')">
@@ -22,7 +20,12 @@
 
 <script>
 export default {
-  props: ['task']
+  props: ['task'],
+  data() {
+    return {
+      dialog: false,
+    };
+  },
 };
 </script>
 
