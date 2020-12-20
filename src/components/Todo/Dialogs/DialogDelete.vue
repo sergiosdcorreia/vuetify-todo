@@ -21,11 +21,9 @@
 <script>
 export default {
   props: ['task'],
-  data() {
-    return {
-      dialog: false,
-    };
-  },
+  data: () => ({
+    dialog: false,
+  }),
 };
 </script>
 
