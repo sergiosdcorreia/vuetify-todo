@@ -2,16 +2,19 @@
   <v-dialog v-model="dialog" persistent max-width="290">
     <v-card>
       <v-card-title class="headline">
-        Delete task?
+        Edit task
       </v-card-title>
-      <v-card-text>Are you sure you wanna delete this task?</v-card-text>
+      <v-card-text>
+        Edit the title of this task
+        <v-text-field v-model="taskTitle" @keyup.enter="saveTask" />
+      </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn text @click="$emmit('close')">
-          No
+          Cancel
         </v-btn>
-        <v-btn color="red" text @click="$store.dispatch('deleteTask', task.id)">
-          Yes
+        <v-btn color="red darken-1" :disabled="tastTitleInvalid" text @click="saveTask">
+          Save
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -23,7 +26,28 @@ export default {
   props: ['task'],
   data: () => ({
     dialog: false,
+    taskTitle: null
   }),
+  computed: {
+    tastTitleInvalid() {
+      return !this.taskTitle || this.taskTitle === this.task.title
+    }
+  },
+  methods: {
+    saveTask() {
+      if (!this.taskTitleInvalid) {
+        let payload = {
+          id: this.task.id,
+          title: this.taskTitle
+        }
+        this.$store.commit('updateTaskTitle', payload)
+        this.$emit('close')
+      }
+    }
+  },
+  mounted() {
+    this.taskTitle = this.task.title
+  }
 };
 </script>
 
