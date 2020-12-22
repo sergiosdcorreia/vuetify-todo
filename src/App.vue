@@ -66,6 +66,7 @@
           <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
           <v-spacer></v-spacer>
           <!-- <search /> -->
+          <search />
         </v-row>
         <v-row>
           <v-toolbar-title class="text-h4 ml-4">
@@ -105,6 +106,7 @@
       // 'search': require('@/components/Tools/Search.vue').default,
       // 'live-date-time': require('@/components/Tools/LiveDateTime.vue').default,
       'field-add-task': require('@/components/Todo/FieldAddTask.vue').default,
+      'search': require('@/components/Tools/Search.vue').default,
       'snackbar': require('@/components/Shared/Snackbar.vue').default
     }
   }
