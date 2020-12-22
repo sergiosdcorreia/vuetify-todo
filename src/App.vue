@@ -65,17 +65,16 @@
         <v-row>
           <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
           <v-spacer></v-spacer>
-          <!-- <search /> -->
           <search />
         </v-row>
         <v-row>
           <v-toolbar-title class="text-h4 ml-4">
-            Vuetify Todo
+            Vuetify
           </v-toolbar-title>
         </v-row>
-        <!-- <v-row>
+        <v-row>
           <live-date-time />
-        </v-row> -->
+        </v-row>
         <v-row v-if="$route.path === '/'">
           <field-add-task />
         </v-row>
@@ -104,7 +103,7 @@
     // },
     components: {
       // 'search': require('@/components/Tools/Search.vue').default,
-      // 'live-date-time': require('@/components/Tools/LiveDateTime.vue').default,
+      'live-date-time': require('@/components/Tools/LiveDateTime.vue').default,
       'field-add-task': require('@/components/Todo/FieldAddTask.vue').default,
       'search': require('@/components/Tools/Search.vue').default,
       'snackbar': require('@/components/Shared/Snackbar.vue').default
