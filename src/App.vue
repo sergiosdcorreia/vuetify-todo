@@ -70,7 +70,7 @@
         </v-row>
         <v-row>
           <v-toolbar-title class="text-h4 ml-4">
-            {{ $store.state.appTitle }}
+            Vuetify Todo
           </v-toolbar-title>
         </v-row>
         <!-- <v-row>
