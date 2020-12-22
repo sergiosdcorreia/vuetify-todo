@@ -10,7 +10,7 @@
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn text @click="$emmit('close')">
+        <v-btn text @click="$emit('close')">
           Cancel
         </v-btn>
         <v-btn color="red darken-1" :disabled="tastTitleInvalid" text @click="saveTask">
