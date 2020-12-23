@@ -13,15 +13,15 @@
       >
         <v-avatar size="70" class="mb-2">
           <img
-            src="https://s.gravatar.com/avatar/ce7f3697e231df38b3ca6065848520da?s=160"
+            src="https://pt.gravatar.com/userimage/131461044/1d9ba2b55b1aae421bdd816281321d3f.jpg?size=200"
             alt="Danny Connell"
           >
         </v-avatar>
         <div class="white--text text-subtitle-1 font-weight-bold">
-          Danny Connell
+          Sergio Correia
         </div>
         <div class="white--text text-subtitle-2">
-          danny__connell
+          sergiosdcorreia
         </div>
       </v-img>
 
@@ -113,5 +113,5 @@
 
 <style lang="sass">
   .header-container
-    max-width: none
+    max-width: none !important
 </style>
