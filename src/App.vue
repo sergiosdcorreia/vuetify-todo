@@ -69,7 +69,7 @@
         </v-row>
         <v-row>
           <v-toolbar-title class="text-h4 ml-4">
-            Vuetify
+            {{ $store.state.appTitle }}
           </v-toolbar-title>
         </v-row>
         <v-row>
