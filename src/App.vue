@@ -14,7 +14,7 @@
         <v-avatar size="70" class="mb-2">
           <img
             src="https://pt.gravatar.com/userimage/131461044/1d9ba2b55b1aae421bdd816281321d3f.jpg?size=200"
-            alt="Danny Connell"
+            alt="Sergio Correia"
           >
         </v-avatar>
         <div class="white--text text-subtitle-1 font-weight-bold">

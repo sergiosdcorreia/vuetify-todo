@@ -25,10 +25,10 @@
 
 <script>
 export default {
+  props: [
+    'task'
+  ],
   data: () => ({
-    props: [
-      'task'
-    ],
     dialogs: {
       edit: false,
       dueDate: false,

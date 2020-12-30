@@ -6,19 +6,32 @@
     persistent
     width="290px"
   >
-    <v-date-picker v-model="date" scrollable>
+    <v-date-picker
+      v-model="date"
+      scrollable
+    >
       <v-spacer></v-spacer>
-      <v-btn text color="primary" @click="$emit('close')"> Cancel </v-btn>
-      <v-btn text color="primary" @click="saveTask"> OK </v-btn>
+      <v-btn
+        @click="$emit('close')"
+        text
+        color="primary"
+      >
+        Cancel
+      </v-btn>
+      <v-btn
+        @click="saveTask"
+        text
+        color="primary"
+      >
+        OK
+      </v-btn>
     </v-date-picker>
   </v-dialog>
 </template>
 
 <script>
 export default {
-  props: [
-    'task'
-  ],
+  props: ['task'],
   data() {
     return {
       date: null
@@ -39,8 +52,5 @@ export default {
       this.date = this.task.dueDate
     }
   }
-};
+}
 </script>
-
-<style>
-</style>
