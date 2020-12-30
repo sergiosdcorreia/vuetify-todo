@@ -102,7 +102,6 @@
       this.$store.dispatch('getTasks')
     },
     components: {
-      // 'search': require('@/components/Tools/Search.vue').default,
       'live-date-time': require('@/components/Tools/LiveDateTime.vue').default,
       'field-add-task': require('@/components/Todo/FieldAddTask.vue').default,
       'search': require('@/components/Tools/Search.vue').default,
