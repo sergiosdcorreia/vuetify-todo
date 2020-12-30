@@ -1,5 +1,8 @@
 # vuetify-todo
 
+## Watch it live
+Watch the [Vuetify-Todo](https://sergio-todo-app.netlify.app/#/) live.
+
 ## Project setup
 ```
 npm install
